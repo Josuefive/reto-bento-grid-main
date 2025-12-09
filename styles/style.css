@@ -406,10 +406,14 @@ html {
 }
 
 .item4__titulo {
+    text-align: left;
+    padding-right: 2rem;
     font-size: 3rem;
     margin-bottom: 2.8rem;
     line-height: 1;
+
 }
+
 .item4__container--imagen {
     width: 100%;
     height: 30rem;
@@ -424,11 +428,11 @@ html {
 }
 
 .item4__texto {
+    text-align: left;
     font-size: 1.7rem;
     margin-top: 2.8rem;
     line-height: 1;
-    padding: 0 2rem 0 0;
-
+    padding: 0 7rem 0 0;
 }
 
 /* Bloque grande abajo */
