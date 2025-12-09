@@ -46,6 +46,7 @@ html {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     gap: 2rem;
     max-width: 400px;
     overflow: hidden; 
@@ -55,38 +56,41 @@ html {
 
 .item1 {
     background-color: var(--purple-500);
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
 } 
 .item2 {
     background-color: var(--white);
+    border-radius: 1.5rem;
 }
 .item3 {
     background-color: var(--yellow-500);
+    border-radius: 1.5rem;
 }
 .item4 {
     background-color: var(--purple-100);
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
 }
 .item5 {
     background-color:var(--purple-500) ;
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
 }
 .item6 {
     background-color: var(--white);
+    border-radius: 1.5rem;
 }
 .item7 {
     background-color: var(--yellow-100);
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
 }
 .item8 {
     background-color: var(--yellow-500);
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
 }
 
 
 
 /* grid */
-@media (min-width: 768px) {
+@media (min-width: 888px) {
 
 .container {
     display: grid;
@@ -147,8 +151,6 @@ html {
 }
 /* estilos de los bloques */
 
-@media (min-width: 768px) {
-
 /* bloque principal */
 .item1 {
     display: flex;
@@ -158,13 +160,12 @@ html {
 
 .item1__titulo {
     color: var(--white);
-    padding: 0 3rem;
+    padding: 0 2rem;
     font-size: 5rem;
     text-align: center;
     margin-bottom: 2rem;
     line-height: 1;
 }
-
 .item1__titulo--dorado {
     color: var(--yellow-500);
 }
@@ -173,11 +174,176 @@ html {
     margin:0 auto;
     width: 20rem;
 }
+
 .item1__texto {
     color: var(--white);
     font-size: 2rem;
     text-align: center;
     margin-top: 1rem;
+}
+
+/* cajas pequeñas del centro */
+.item2 {
+    padding: 1rem ;
+}
+.item2__titulo {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+/* #2 caja del centro */
+.item3 {
+    padding: 2rem 2rem 0 2rem;
+}
+
+.item3__titulo {
+    font-size: 2.8rem;
+    line-height: 1;
+    padding-right: 2rem;
+    margin: 1rem 0;
+}
+
+.item3__container--imagen {
+    width: 22rem;
+    height: 15rem;
+    overflow: hidden;
+    object-position: left;
+}
+
+.item3__imagen{
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: left;
+    display: block;
+}
+
+/* bloque de la deracha */
+.item4 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.item4__titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.8rem;
+    line-height: 1;
+}
+.item4__container--imagen {
+    width: 100%;
+}
+.item4__imagen {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.item4__texto {
+    font-size: 1.9rem;
+    margin-top: 2.8rem;
+    line-height: 1;
+    text-align: center;
+}
+
+/* Bloque grande abajo */
+.item5 {
+    padding: 2rem;
+}
+.item5__contenido {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.item5__titulo {
+    color: var(--white);
+    line-height: 1;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 3rem;
+    margin: 0;
+}
+.item5__imagen {
+    width: 22rem;
+}
+
+/* caja pequeña de abajo */
+.item6 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.item6__titulo {
+    font-size: 5em;
+    margin: 0;
+}
+
+.item6__texto {
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+}
+
+.item6__imagen {
+    margin-top: 1.2rem;
+    width: 16rem;
+}
+
+/* bloques de la izquierda */
+
+.item7 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.item7__titulo {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    line-height: 1;
+}
+
+.item7__titulo--morado {
+    color: var(--purple-500);
+}
+
+.item7__imagen{
+    width: 18rem;
+}
+
+
+.item8 {
+    background-color: var(--yellow-500);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.item8__titulo {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.item8__imagen {
+    width: 22rem;
+}
+
+
+
+
+/* para destock */
+@media (min-width: 888px) {
+    
+.item1__titulo {
+    color: var(--white);
+    padding: 0 3rem;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1;
 }
 
 /* cajas pequeñas del centro */
@@ -231,6 +397,8 @@ html {
     object-position: top;
     display: block;
 }
+
+
 
 
 /* bloque de la deracha */
@@ -287,27 +455,6 @@ html {
 
 }
 
-/* caja pequeña de abajo */
-.item6 {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-}
-.item6__titulo {
-    font-size: 5em;
-    margin: 0;
-}
-
-.item6__texto {
-    font-size: 1.7rem;
-    margin-top: 0.5rem;
-}
-
-.item6__imagen {
-    margin-top: 1.2rem;
-    width: 16rem;
-}
-
 /* bloques de la izquierda */
 
 .item7 {
@@ -322,13 +469,6 @@ html {
     line-height: 1;
 }
 
-.item7__titulo--morado {
-    color: var(--purple-500);
-}
-
-.item7__imagen{
-    width: 18rem;
-}
 
 
 .item8 {
@@ -352,5 +492,5 @@ html {
 footer {
     width: 100%;       
     text-align: center; 
-    padding-top: 2rem;      
+    padding: 2rem;   
 }
